@@ -20,3 +20,6 @@ dist
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# notes and some try outs
+NOTES.md

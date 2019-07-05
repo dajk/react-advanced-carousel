@@ -1,13 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Carousel from 'react-advanced-carousel'
 
-import ExampleComponent from 'react-advanced-carousel'
-
-export default class App extends Component {
+export default class App extends React.Component {
   render() {
     return (
-      <div>
-        <ExampleComponent text="Modern React component module" />
-      </div>
+      <Carousel>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+      </Carousel>
     )
   }
 }
