@@ -18,10 +18,8 @@ import * as React from 'react'
 import MyComponent from 'react-advanced-carousel'
 
 class Example extends React.Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />
   }
 }
 ```
