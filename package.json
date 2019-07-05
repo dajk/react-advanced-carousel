@@ -64,7 +64,7 @@
   },
   "bundlesize": [
     {
-      "path": "./dist/styled-components.min.js",
+      "path": "./dist/index.js",
       "maxSize": "10kB",
       "compression": "brotli"
     }
