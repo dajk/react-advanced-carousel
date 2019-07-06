@@ -1,4 +1,13 @@
 {
-  "main.js": "static/js/main.64e4f275.js",
-  "main.js.map": "static/js/main.64e4f275.js.map"
+  "files": {
+    "main.js": "/react-advanced-carousel/static/js/main.9da6d975.chunk.js",
+    "main.js.map": "/react-advanced-carousel/static/js/main.9da6d975.chunk.js.map",
+    "runtime~main.js": "/react-advanced-carousel/static/js/runtime~main.a3dbba49.js",
+    "runtime~main.js.map": "/react-advanced-carousel/static/js/runtime~main.a3dbba49.js.map",
+    "static/js/2.fa1e869d.chunk.js": "/react-advanced-carousel/static/js/2.fa1e869d.chunk.js",
+    "static/js/2.fa1e869d.chunk.js.map": "/react-advanced-carousel/static/js/2.fa1e869d.chunk.js.map",
+    "index.html": "/react-advanced-carousel/index.html",
+    "precache-manifest.a561fcae944f3634563b170c7ee68a1c.js": "/react-advanced-carousel/precache-manifest.a561fcae944f3634563b170c7ee68a1c.js",
+    "service-worker.js": "/react-advanced-carousel/service-worker.js"
+  }
 }
