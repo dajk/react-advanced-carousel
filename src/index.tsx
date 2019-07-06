@@ -1,4 +1,23 @@
 import * as React from 'react'
+import styled from 'styled-components'
+
+type IStyledItem = {
+  itemHeight: number
+  itemWidth: number
+}
+
+const StyledItem = styled.li`
+  height: ${(props: IStyledItem) => `${props.itemHeight}px`};
+  flex: 1 0 ${(props: IStyledItem) => `${props.itemWidth}%`};
+`
+
+const StyledList = styled.ul`
+  display: flex;
+  list-style: none;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+`
 
 interface ICarousel {
   children: React.ReactChild[]
@@ -7,33 +26,26 @@ interface ICarousel {
 }
 
 const Carousel = (props: ICarousel) => {
-  const [itemWidth, setItemWidth] = React.useState(
+  const [width, setWidth] = React.useState(
     percentageOfScreen(props.visibleItems),
   )
 
   React.useEffect(() => {
     if (props.visibleItems) {
-      setItemWidth(percentageOfScreen(props.visibleItems))
+      setWidth(percentageOfScreen(props.visibleItems))
     }
-  }, [setItemWidth, props.visibleItems])
+  }, [setWidth, props.visibleItems])
 
   return (
-    <ul style={wrapperStyle}>
+    <StyledList>
       {props.children.map((item, index) => {
         return (
-          <li
-            style={{
-              ...itemStyle,
-              height: props.height,
-              flex: `1 0 ${itemWidth}`,
-            }}
-            key={index}
-          >
+          <StyledItem itemHeight={props.height} itemWidth={width} key={index}>
             {item}
-          </li>
+          </StyledItem>
         )
       })}
-    </ul>
+    </StyledList>
   )
 }
 
@@ -42,18 +54,8 @@ Carousel.defaultProps = {
   height: 200,
 }
 
-const itemStyle: React.CSSProperties = {}
-
-const wrapperStyle: React.CSSProperties = {
-  display: 'flex',
-  listStyle: 'none',
-  overflowX: 'auto',
-  padding: 0,
-  margin: 0,
-}
-
 export default Carousel
 
 function percentageOfScreen(numberOfItems: number) {
-  return `${100 / numberOfItems}%`
+  return 100 / numberOfItems
 }
