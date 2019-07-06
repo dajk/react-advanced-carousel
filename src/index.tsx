@@ -18,10 +18,11 @@ const Carousel = (props: ICarousel) => {
   }, [setItemWidth, props.visibleItems])
 
   return (
-    <ul style={wrapperStyle}>
+    <ul data-testid="carousel-list" style={wrapperStyle}>
       {props.children.map((item, index) => {
         return (
           <li
+            data-testid="carousel-item"
             style={{
               ...itemStyle,
               height: props.height,
