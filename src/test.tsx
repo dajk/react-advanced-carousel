@@ -1,25 +1,27 @@
 import * as React from 'react'
-import { render, cleanup } from '@testing-library/react'
+import { render } from '../utils/test-utils'
 
-import BaseCarousel from '.'
-
-const Carousel = () => (
-  <BaseCarousel visibleItems={2}>
-    <span>1</span>
-    <span>2</span>
-    <span>3</span>
-  </BaseCarousel>
-)
+import Carousel from '.'
 
 describe('Carousel', () => {
-  beforeEach(cleanup)
   it('should render properly', async () => {
-    const { findByTestId } = render(<Carousel />)
+    const { findByTestId } = render(
+      <Carousel>
+        <span>1</span>
+        <span>2</span>
+      </Carousel>,
+    )
     const carousel = await findByTestId('carousel-list')
     expect(carousel).toBeTruthy()
   })
   it('should render 3 items', async () => {
-    const { findAllByTestId } = render(<Carousel />)
+    const { findAllByTestId } = render(
+      <Carousel>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+      </Carousel>,
+    )
     const item = await findAllByTestId('carousel-item')
     expect(item.length).toBe(3)
   })
