@@ -7,20 +7,38 @@
 ## Install
 
 ```bash
-npm install --save react-advanced-carousel
+npm install react-advanced-carousel
+```
+
+or
+
+```bash
+yarn add react-advanced-carousel
 ```
 
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React from 'react'
+import Carousel from 'react-advanced-carousel'
 
-import MyComponent from 'react-advanced-carousel'
+const items = [
+  { id: 1, name: 'first' },
+  { id: 2, name: 'second' },
+  { id: 3, name: 'third' },
+]
 
-class Example extends React.Component {
-  render() {
-    return <MyComponent />
-  }
+const MyCarousel = () => {
+  return (
+    <>
+      <h1>My Carousel</h1>
+      <Carousel>
+        {items.map(item => (
+          <span key={item.id}>{item.name}</span>
+        ))}
+      </Carousel>
+    </>
+  )
 }
 ```
 
