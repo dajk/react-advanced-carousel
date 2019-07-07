@@ -1,60 +1,45 @@
 import * as React from 'react'
+import Component from './components'
+import { screenPercentage } from '../utils/screen-percentage'
 
 interface ICarousel {
-  children: React.ReactChild[]
+  children: JSX.Element[]
   visibleItems: number
-  height: number
+  height: string
 }
 
 const Carousel = (props: ICarousel) => {
   const [itemWidth, setItemWidth] = React.useState(
-    percentageOfScreen(props.visibleItems)
+    screenPercentage(props.visibleItems)
   )
 
   React.useEffect(() => {
     if (props.visibleItems) {
-      setItemWidth(percentageOfScreen(props.visibleItems))
+      setItemWidth(screenPercentage(props.visibleItems))
     }
   }, [setItemWidth, props.visibleItems])
 
   return (
-    <ul data-testid="carousel-list" style={wrapperStyle}>
+    <Component.List data-testid="carousel-list">
       {props.children.map((item, index) => {
         return (
-          <li
+          <Component.Item
             data-testid="carousel-item"
-            style={{
-              ...itemStyle,
-              height: props.height,
-              flex: `1 0 ${itemWidth}`,
-            }}
             key={index}
+            height={props.height}
+            width={itemWidth}
           >
             {item}
-          </li>
+          </Component.Item>
         )
       })}
-    </ul>
+    </Component.List>
   )
 }
 
 Carousel.defaultProps = {
   visibleItems: 4,
-  height: 200,
-}
-
-const itemStyle: React.CSSProperties = {}
-
-const wrapperStyle: React.CSSProperties = {
-  display: 'flex',
-  listStyle: 'none',
-  overflowX: 'auto',
-  padding: 0,
-  margin: 0,
+  height: '200px',
 }
 
 export default Carousel
-
-function percentageOfScreen(numberOfItems: number) {
-  return `${100 / numberOfItems}%`
-}
