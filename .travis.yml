@@ -1,9 +1,8 @@
 language: node_js
+# node versions https://github.com/nodejs/Release
 node_js:
+  - "12"
   - "10"
-  - "9"
   - "8"
-before_install:
-  - npm install -g yarn
 script:
   - yarn bundlesize
