@@ -8,7 +8,7 @@ interface ICarousel {
 
 const Carousel = (props: ICarousel) => {
   const [itemWidth, setItemWidth] = React.useState(
-    percentageOfScreen(props.visibleItems),
+    percentageOfScreen(props.visibleItems)
   )
 
   React.useEffect(() => {

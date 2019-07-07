@@ -6,7 +6,7 @@ type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>
 
 const customRender = (
   ui: React.ReactElement,
-  options?: Omit<RenderOptions, 'queries'>,
+  options?: Omit<RenderOptions, 'queries'>
 ) => render(ui, { ...options })
 
 // re-export everything

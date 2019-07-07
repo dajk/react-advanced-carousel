@@ -9,7 +9,7 @@ describe('Carousel', () => {
       <Carousel>
         <span>1</span>
         <span>2</span>
-      </Carousel>,
+      </Carousel>
     )
     const carousel = await findByTestId('carousel-list')
     expect(carousel).toBeTruthy()
@@ -20,7 +20,7 @@ describe('Carousel', () => {
         <span>1</span>
         <span>2</span>
         <span>3</span>
-      </Carousel>,
+      </Carousel>
     )
     const item = await findAllByTestId('carousel-item')
     expect(item.length).toBe(3)
