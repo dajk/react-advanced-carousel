@@ -125,6 +125,7 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
+      "utils/**/*.{js,jsx,ts,tsx}",
       "!**/*.d.ts"
     ],
     "setupFiles": [
@@ -135,7 +136,9 @@
     ],
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.(j|t)s?(x)",
-      "<rootDir>/src/**/?(*.)(spec|test).(j|t)s?(x)"
+      "<rootDir>/utils/**/__tests__/**/*.(j|t)s?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).(j|t)s?(x)",
+      "<rootDir>/utils/**/?(*.)(spec|test).(j|t)s?(x)"
     ],
     "testEnvironment": "node",
     "testURL": "http://localhost",
