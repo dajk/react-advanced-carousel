@@ -5,7 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/react-advanced-carousel.svg)](https://www.npmjs.com/package/react-advanced-carousel)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![codecov](https://codecov.io/gh/dajk/react-advanced-carousel/branch/master/graph/badge.svg)](https://codecov.io/gh/dajk/react-advanced-carousel)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-advanced-carousel)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-advanced-carousel/latest)
 
 ## Install
 
