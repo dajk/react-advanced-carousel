@@ -1,8 +1,10 @@
 language: node_js
 # node versions https://github.com/nodejs/Release
 node_js:
-  - "12"
-  - "10"
-  - "8"
+  - '12'
+  - '10'
+  - '8'
 script:
   - yarn bundlesize
+  - yarn test
+  - bash <(curl -s https://codecov.io/bash)
