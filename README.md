@@ -2,7 +2,10 @@
 
 > Advanced Carousel for React
 
-[![NPM](https://img.shields.io/npm/v/react-advanced-carousel.svg)](https://www.npmjs.com/package/react-advanced-carousel) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) ![npm bundle size](https://img.shields.io/bundlephobia/min/react-advanced-carousel.svg)
+[![NPM](https://img.shields.io/npm/v/react-advanced-carousel.svg)](https://www.npmjs.com/package/react-advanced-carousel)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![codecov](https://codecov.io/gh/dajk/react-advanced-carousel/branch/master/graph/badge.svg)](https://codecov.io/gh/dajk/react-advanced-carousel)
+![npm bundle size](https://img.shields.io/bundlephobia/min/react-advanced-carousel.svg)
 
 ## Install
 
@@ -33,7 +36,7 @@ const MyCarousel = () => {
     <>
       <h1>My Carousel</h1>
       <Carousel>
-        {items.map(item => (
+        {items.map((item) => (
           <span key={item.id}>{item.name}</span>
         ))}
       </Carousel>
