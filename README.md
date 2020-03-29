@@ -1,29 +1,29 @@
-# react-advanced-carousel
+# react-carousel
 
-> Advanced Carousel for React
+> Carousel for React
 
-[![NPM](https://img.shields.io/npm/v/react-advanced-carousel.svg)](https://www.npmjs.com/package/react-advanced-carousel)
+[![NPM](https://img.shields.io/npm/v/react-carousel.svg)](https://www.npmjs.com/package/@dajk/react-carousel)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![codecov](https://codecov.io/gh/dajk/react-advanced-carousel/branch/master/graph/badge.svg)](https://codecov.io/gh/dajk/react-advanced-carousel)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/react-advanced-carousel/latest)
+[![codecov](https://codecov.io/gh/dajk/react-carousel/branch/master/graph/badge.svg)](https://codecov.io/gh/dajk/react-carousel)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/@dajk/react-carousel/latest)
 
 ## Install
 
 ```bash
-npm install react-advanced-carousel
+npm install @dajk/react-carousel
 ```
 
 or
 
 ```bash
-yarn add react-advanced-carousel
+yarn add @dajk/react-carousel
 ```
 
 ## Usage
 
 ```tsx
 import React from 'react'
-import Carousel from 'react-advanced-carousel'
+import Carousel from '@dajk/react-carousel'
 
 const items = [
   { id: 1, name: 'first' },

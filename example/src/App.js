@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from 'react-advanced-carousel'
+import Carousel from 'react-carousel'
 import { items } from './items'
 
 export default class App extends React.Component {

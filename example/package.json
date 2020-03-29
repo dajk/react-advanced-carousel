@@ -1,13 +1,13 @@
 {
-  "name": "react-advanced-carousel-example",
-  "homepage": "https://dajk.github.io/react-advanced-carousel",
+  "name": "react-carousel-example",
+  "homepage": "https://dajk.github.io/react-carousel",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "link:../node_modules/react",
-    "react-advanced-carousel": "link:..",
+    "react-carousel": "link:..",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "^3.0.1"
   },

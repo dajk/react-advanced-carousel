@@ -1,10 +1,10 @@
 {
-  "name": "react-advanced-carousel",
+  "name": "@dajk/react-carousel",
   "version": "0.0.0-alpha.3",
-  "description": "Advanced Carousel for React",
+  "description": "Carousel for React",
   "author": "Radovan Hajdukovic",
   "license": "MIT",
-  "repository": "dajk/react-advanced-carousel",
+  "repository": "dajk/react-carousel",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
