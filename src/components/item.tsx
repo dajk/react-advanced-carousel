@@ -19,6 +19,7 @@ export const Item = (props: {
             .${uniqueItem} {
               height: ${props.height};
               flex: 1 0 ${props.width};
+              scroll-snap-align: center;
             }
           `}
           {
