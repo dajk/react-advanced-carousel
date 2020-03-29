@@ -5,6 +5,6 @@ node_js:
   - '10'
   - '8'
 script:
-  - yarn bundlesize
+  - yarn bundlewatch
   - yarn test
   - bash <(curl -s https://codecov.io/bash)
