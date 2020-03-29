@@ -2,8 +2,7 @@
 
 > Carousel for React
 
-[![NPM](https://img.shields.io/npm/v/react-carousel.svg)](https://www.npmjs.com/package/@dajk/react-carousel)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![npm](https://img.shields.io/npm/v/@dajk/react-carousel/latest)
 [![codecov](https://codecov.io/gh/dajk/react-carousel/branch/master/graph/badge.svg)](https://codecov.io/gh/dajk/react-carousel)
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@dajk/react-carousel/latest)
 
