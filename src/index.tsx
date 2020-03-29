@@ -14,9 +14,7 @@ const Carousel = (props: ICarousel) => {
   )
 
   React.useEffect(() => {
-    if (props.visibleItems) {
-      setItemWidth(screenPercentage(props.visibleItems))
-    }
+    setItemWidth(screenPercentage(props.visibleItems))
   }, [setItemWidth, props.visibleItems])
 
   return (
