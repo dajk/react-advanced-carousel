@@ -119,8 +119,7 @@
     "files": [
       {
         "path": "./dist/index.js",
-        "maxSize": "2kB",
-        "compression": "brotli"
+        "maxSize": "2kB"
       }
     ]
   },
