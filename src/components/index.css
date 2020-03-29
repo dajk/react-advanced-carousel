@@ -1,0 +1,28 @@
+.list {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  list-style: none;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+}
+
+/* Safar / Chrome */
+.list::-webkit-scrollbar-track,
+.list::-webkit-scrollbar,
+.list::-webkit-scrollbar-thumb {
+  width: 0;
+  height: 0;
+}
+
+.list {
+  /* Firefox */
+  scrollbar-width: none;
+  /* IE */
+  -ms-overflow-style: none;
+}
+
+.item {
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}

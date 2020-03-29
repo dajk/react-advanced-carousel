@@ -25,7 +25,6 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "prop-types": "^15.5.4",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
@@ -56,6 +55,7 @@
     "html-webpack-plugin": "^4.0.0-beta.5",
     "husky": "^3.0.0",
     "jest": "^24.8.0",
+    "jest-css-modules": "^2.1.0",
     "jest-dom": "^3.5.0",
     "lint-staged": "^9.1.0",
     "object-assign": "4.1.1",
@@ -155,7 +155,8 @@
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|ts|tsx)$"
     ],
     "moduleNameMapper": {
-      "^react-native$": "react-native-web"
+      "^react-native$": "react-native-web",
+      "\\.(css|less|scss|sss|styl)$": "<rootDir>/node_modules/jest-css-modules"
     },
     "moduleFileExtensions": [
       "web.ts",

@@ -1,9 +1,5 @@
-import * as React from 'react'
-import { css } from '../../utils/css'
-import { unique } from '../../utils/unique'
-
-const uniqueItem = unique()
-let createdItem = 0
+import React from 'react'
+import styles from './index.css'
 
 export const Item = (props: {
   height: string
@@ -12,25 +8,15 @@ export const Item = (props: {
   'data-testid': string
 }) => {
   return (
-    <>
-      {createdItem < 1 ? (
-        <style>
-          {css`
-            .${uniqueItem} {
-              height: ${props.height};
-              flex: 1 0 ${props.width};
-              scroll-snap-align: center;
-            }
-          `}
-          {
-            // increment createdItem so that we asure only one creation
-            createdItem++
-          }
-        </style>
-      ) : null}
-      <li data-testid={props['data-testid']} className={uniqueItem}>
-        {props.children}
-      </li>
-    </>
+    <li
+      data-testid={props['data-testid']}
+      className={styles.item}
+      style={{
+        minHeight: props.height,
+        flexBasis: props.width,
+      }}
+    >
+      {props.children}
+    </li>
   )
 }
