@@ -121,7 +121,8 @@
         "path": "./dist/index.js",
         "maxSize": "2kB"
       }
-    ]
+    ],
+    "defaultCompression": "gzip"
   },
   "jest": {
     "collectCoverage": true,
