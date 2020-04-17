@@ -21,7 +21,7 @@ yarn add @dajk/react-carousel
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React from 'react'
 import Carousel from '@dajk/react-carousel'
 
 const items = [

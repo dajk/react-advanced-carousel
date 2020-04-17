@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import Component from './components'
 import { screenPercentage } from '../utils/screen-percentage'
 
