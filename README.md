@@ -24,22 +24,33 @@ yarn add @dajk/react-carousel
 import React from 'react'
 import Carousel from '@dajk/react-carousel'
 
-const items = [
-  { id: 1, name: 'first' },
-  { id: 2, name: 'second' },
-  { id: 3, name: 'third' },
+export const items = [
+  { backgroundColor: 'blue', color: 'white' },
+  { backgroundColor: 'red', color: 'white' },
+  { backgroundColor: 'green', color: 'white' },
+  { backgroundColor: 'yellow', color: 'black' },
 ]
 
 const MyCarousel = () => {
   return (
-    <>
-      <h1>My Carousel</h1>
-      <Carousel>
-        {items.map((item) => (
-          <span key={item.id}>{item.name}</span>
-        ))}
-      </Carousel>
-    </>
+    <Carousel>
+      {items.map((item, index) => {
+        return (
+          <div
+            key={index}
+            style={{
+              height: 200,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              ...item,
+            }}
+          >
+            {index}
+          </div>
+        )
+      })}
+    </Carousel>
   )
 }
 ```

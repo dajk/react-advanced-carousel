@@ -1,0 +1,46 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+.react-carousel-library__slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar */
+.react-carousel-library__slider {
+  /* IE, Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-color: transparent transparent;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  overflow-x: auto;
+  touch-action: manipulation;
+  scroll-snap-type: x mandatory;
+}
+
+.slider {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  /* padding-bottom: 66.667%; // 600x400 ratio */
+  flex: 1;
+  min-width: 100%;
+  position: relative;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+.arrow {
+  color: black;
+  font-size: 2rem;
+}

@@ -5,26 +5,27 @@ import { items } from './items'
 export default class App extends React.Component {
   render() {
     return (
-      <div style={{ border: '1px solid red' }}>
-        <Carousel visibleItems={3}>
+      <>
+        <h1>React Carousel</h1>
+        <Carousel>
           {items.map((item, index) => {
             return (
               <div
                 key={index}
                 style={{
-                  border: '1px solid blue',
-                  height: '100%',
+                  height: 200,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
+                  ...item,
                 }}
               >
-                {item.name}
+                {index}
               </div>
             )
           })}
         </Carousel>
-      </div>
+      </>
     )
   }
 }

@@ -1,32 +1,18 @@
 export const items = [
   {
-    name: 'Item # 1',
+    backgroundColor: 'blue',
+    color: 'white',
   },
   {
-    name: 'Item # 2',
+    backgroundColor: 'red',
+    color: 'white',
   },
   {
-    name: 'Item # 3',
+    backgroundColor: 'green',
+    color: 'white',
   },
   {
-    name: 'Item # 4',
-  },
-  {
-    name: 'Item # 5',
-  },
-  {
-    name: 'Item # 6',
-  },
-  {
-    name: 'Item # 7',
-  },
-  {
-    name: 'Item # 8',
-  },
-  {
-    name: 'Item # 9',
-  },
-  {
-    name: 'Item # 10',
+    backgroundColor: 'yellow',
+    color: 'black',
   },
 ]

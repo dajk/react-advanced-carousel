@@ -1,6 +1,6 @@
 import React from 'react'
 import { render, RenderOptions } from '@testing-library/react'
-import 'jest-dom/extend-expect'
+import '@testing-library/jest-dom/extend-expect'
 
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>
 
