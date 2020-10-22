@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/react-carousel/static/js/main.bc73db78.chunk.js",
-    "main.js.map": "/react-carousel/static/js/main.bc73db78.chunk.js.map",
+    "main.js": "/react-carousel/static/js/main.061d6751.chunk.js",
+    "main.js.map": "/react-carousel/static/js/main.061d6751.chunk.js.map",
     "runtime-main.js": "/react-carousel/static/js/runtime-main.abdad7ed.js",
     "runtime-main.js.map": "/react-carousel/static/js/runtime-main.abdad7ed.js.map",
     "static/js/2.dd4199a2.chunk.js": "/react-carousel/static/js/2.dd4199a2.chunk.js",
     "static/js/2.dd4199a2.chunk.js.map": "/react-carousel/static/js/2.dd4199a2.chunk.js.map",
     "index.html": "/react-carousel/index.html",
-    "precache-manifest.71b4eb9154e534006092e9b7210a3bd7.js": "/react-carousel/precache-manifest.71b4eb9154e534006092e9b7210a3bd7.js",
+    "precache-manifest.53ef9a50517c653372cc8342ba54c1e8.js": "/react-carousel/precache-manifest.53ef9a50517c653372cc8342ba54c1e8.js",
     "service-worker.js": "/react-carousel/service-worker.js",
     "static/js/2.dd4199a2.chunk.js.LICENSE.txt": "/react-carousel/static/js/2.dd4199a2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.abdad7ed.js",
     "static/js/2.dd4199a2.chunk.js",
-    "static/js/main.bc73db78.chunk.js"
+    "static/js/main.061d6751.chunk.js"
   ]
 }
